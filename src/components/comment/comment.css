@@ -1,0 +1,84 @@
+.comment-item {
+  display: flex;
+  gap: 5px;
+  margin: 5px 0;
+  font-weight: 600;
+}
+
+.comment-delete {
+  padding: 5px 4px;
+  border-radius: 5px;
+  outline: none;
+  color: red;
+  font-weight: 600;
+  background-color: white;
+  cursor: pointer;
+  border: 1px solid red;
+}
+
+.comment-delete:hover {
+  color: white;
+  background-color: red;
+}
+
+.comment-reply {
+  padding: 5px 4px;
+  border-radius: 5px;
+  outline: none;
+  color: blue;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid blue;
+}
+
+.comment-reply:hover{
+  background-color: blue;
+  color: white;
+}
+
+.comment-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.comment-nest {
+  display: flex;
+  gap: 5px;
+}
+
+.comment-nest > input {
+  width: 70%;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.save {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 1px solid black;
+  background-color: lightgreen;
+  color: white;
+  cursor: pointer;
+}
+
+.save:hover {
+  background-color: green;
+}
+
+.cancel {
+  padding: 5px 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  border: 1px solid black;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.cancel:hover {
+  background-color: rgb(190, 76, 76);
+}
