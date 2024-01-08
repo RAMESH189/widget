@@ -14,10 +14,19 @@ export default function Widget() {
   }
 
   function deleteComment(commentId) {
-    const updatedComments = comments.filter(
-      (comment) => comment.id !== commentId
-    );
+    const updatedComments = removeComment(comments, commentId);
     setComments(updatedComments);
+  }
+
+  function removeComment(commentsArray, id) {
+    return commentsArray.filter((comment) => {
+      if (comment.id === id) {
+        return false;
+      }
+
+      comment.children = removeComment(comment.children, id);
+      return true;
+    });
   }
 
   function newComment(text) {
